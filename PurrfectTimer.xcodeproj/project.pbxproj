@@ -11,9 +11,12 @@
 		86EA63842BF3270B00A242D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63832BF3270B00A242D4 /* ContentView.swift */; };
 		86EA63862BF3270D00A242D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EA63852BF3270D00A242D4 /* Assets.xcassets */; };
 		86EA638A2BF3270D00A242D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EA63892BF3270D00A242D4 /* Preview Assets.xcassets */; };
-		86EA63942BF3270D00A242D4 /* PurrfectTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63932BF3270D00A242D4 /* PurrfectTimerTests.swift */; };
-		86EA639E2BF3270D00A242D4 /* PurrfectTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA639D2BF3270D00A242D4 /* PurrfectTimerUITests.swift */; };
-		86EA63A02BF3270D00A242D4 /* PurrfectTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA639F2BF3270D00A242D4 /* PurrfectTimerUITestsLaunchTests.swift */; };
+		86EA63B12BF327DF00A242D4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63B02BF327DF00A242D4 /* NotificationManager.swift */; };
+		86EA63BA2BF328E900A242D4 /* CountdownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63B92BF328E900A242D4 /* CountdownViewModel.swift */; };
+		86EA63BC2BF3295B00A242D4 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63BB2BF3295B00A242D4 /* CountdownManager.swift */; };
+		86EA63BE2BF3297300A242D4 /* CountdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63BD2BF3297300A242D4 /* CountdownRow.swift */; };
+		86EA63C02BF3298A00A242D4 /* AddTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63BF2BF3298A00A242D4 /* AddTimerView.swift */; };
+		86EA63C22BF32E1C00A242D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA63C12BF32E1C00A242D4 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +44,14 @@
 		86EA63872BF3270D00A242D4 /* PurrfectTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PurrfectTimer.entitlements; sourceTree = "<group>"; };
 		86EA63892BF3270D00A242D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86EA638F2BF3270D00A242D4 /* PurrfectTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurrfectTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86EA63932BF3270D00A242D4 /* PurrfectTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurrfectTimerTests.swift; sourceTree = "<group>"; };
 		86EA63992BF3270D00A242D4 /* PurrfectTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurrfectTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86EA639D2BF3270D00A242D4 /* PurrfectTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurrfectTimerUITests.swift; sourceTree = "<group>"; };
-		86EA639F2BF3270D00A242D4 /* PurrfectTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurrfectTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86EA63B02BF327DF00A242D4 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		86EA63B92BF328E900A242D4 /* CountdownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewModel.swift; sourceTree = "<group>"; };
+		86EA63BB2BF3295B00A242D4 /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
+		86EA63BD2BF3297300A242D4 /* CountdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownRow.swift; sourceTree = "<group>"; };
+		86EA63BF2BF3298A00A242D4 /* AddTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerView.swift; sourceTree = "<group>"; };
+		86EA63C12BF32E1C00A242D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		86EA63C32BF3327900A242D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +82,8 @@
 		86EA63752BF3270B00A242D4 = {
 			isa = PBXGroup;
 			children = (
+				86EA63C32BF3327900A242D4 /* README.md */,
 				86EA63802BF3270B00A242D4 /* PurrfectTimer */,
-				86EA63922BF3270D00A242D4 /* PurrfectTimerTests */,
-				86EA639C2BF3270D00A242D4 /* PurrfectTimerUITests */,
 				86EA637F2BF3270B00A242D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +103,9 @@
 			children = (
 				86EA63812BF3270B00A242D4 /* PurrfectTimerApp.swift */,
 				86EA63832BF3270B00A242D4 /* ContentView.swift */,
+				86EA63B22BF327FA00A242D4 /* Views */,
+				86EA63AF2BF327CD00A242D4 /* Utilities */,
+				86EA63AE2BF3279500A242D4 /* ViewModels */,
 				86EA63852BF3270D00A242D4 /* Assets.xcassets */,
 				86EA63872BF3270D00A242D4 /* PurrfectTimer.entitlements */,
 				86EA63882BF3270D00A242D4 /* Preview Content */,
@@ -112,21 +121,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		86EA63922BF3270D00A242D4 /* PurrfectTimerTests */ = {
+		86EA63AE2BF3279500A242D4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				86EA63932BF3270D00A242D4 /* PurrfectTimerTests.swift */,
+				86EA63B92BF328E900A242D4 /* CountdownViewModel.swift */,
+				86EA63BB2BF3295B00A242D4 /* CountdownManager.swift */,
 			);
-			path = PurrfectTimerTests;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		86EA639C2BF3270D00A242D4 /* PurrfectTimerUITests */ = {
+		86EA63AF2BF327CD00A242D4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				86EA639D2BF3270D00A242D4 /* PurrfectTimerUITests.swift */,
-				86EA639F2BF3270D00A242D4 /* PurrfectTimerUITestsLaunchTests.swift */,
+				86EA63B02BF327DF00A242D4 /* NotificationManager.swift */,
 			);
-			path = PurrfectTimerUITests;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		86EA63B22BF327FA00A242D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86EA63BD2BF3297300A242D4 /* CountdownRow.swift */,
+				86EA63BF2BF3298A00A242D4 /* AddTimerView.swift */,
+				86EA63C12BF32E1C00A242D4 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86EA63842BF3270B00A242D4 /* ContentView.swift in Sources */,
+				86EA63C22BF32E1C00A242D4 /* SettingsView.swift in Sources */,
+				86EA63BE2BF3297300A242D4 /* CountdownRow.swift in Sources */,
+				86EA63C02BF3298A00A242D4 /* AddTimerView.swift in Sources */,
+				86EA63BC2BF3295B00A242D4 /* CountdownManager.swift in Sources */,
+				86EA63BA2BF328E900A242D4 /* CountdownViewModel.swift in Sources */,
+				86EA63B12BF327DF00A242D4 /* NotificationManager.swift in Sources */,
 				86EA63822BF3270B00A242D4 /* PurrfectTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EA63942BF3270D00A242D4 /* PurrfectTimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EA639E2BF3270D00A242D4 /* PurrfectTimerUITests.swift in Sources */,
-				86EA63A02BF3270D00A242D4 /* PurrfectTimerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = PurrfectTimer/PurrfectTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -419,6 +442,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Purrfect Timer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -427,8 +452,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -437,10 +462,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = twizy.PurrfectTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = PurrfectTimer/PurrfectTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +485,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Purrfect Timer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,8 +495,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -475,10 +505,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = twizy.PurrfectTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
