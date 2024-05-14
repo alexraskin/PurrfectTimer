@@ -13,6 +13,7 @@ struct AddTimerView: View {
     @ObservedObject var countdownManager: CountdownManager
     @State private var title: String = ""
     @State private var targetDate = Date()
+    @State private var showingInvalidDateAlert = false
     
     var body: some View {
         NavigationView {
@@ -22,12 +23,23 @@ struct AddTimerView: View {
                 DatePicker("Select Date", selection: $targetDate, displayedComponents: [.date, .hourAndMinute])
                 
                 Button(action: {
-                    countdownManager.addTimer(title: title, targetDate: targetDate)
-                    presentationMode.wrappedValue.dismiss()
+                    if targetDate < Date() {
+                        showingInvalidDateAlert = true
+                    } else {
+                        countdownManager.addTimer(title: title, targetDate: targetDate)
+                        presentationMode.wrappedValue.dismiss()
+                    }
                 }) {
                     Text("Add Timer")
                 }
                 .disabled(title.isEmpty)
+                .alert(isPresented: $showingInvalidDateAlert) {
+                    Alert(
+                        title: Text("Invalid Date"),
+                        message: Text("Please select a date and time in the future."),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
             .navigationBarTitle("New Timer")
         }
@@ -39,4 +51,3 @@ struct AddTimerView_Previews: PreviewProvider {
         AddTimerView(countdownManager: CountdownManager())
     }
 }
-
